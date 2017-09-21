@@ -1,11 +1,11 @@
 <div class="container">
   <table class="table table-bordered">
     <tr>
-      <th> Name </th>
-      <th> Category </th>
-      <th> Amount </th>
+      <th (click)="ev('name')"> Name </th>
+      <th (click)="ev('category')"> Category </th>
+      <th (click)="ev('amount')"> Amount </th>
     </tr>
-    <tr *ngFor="let d of data">
+    <tr *ngFor="let d of data | sortorder: {property: column, direction: direction}">
       <td>{{d.name}}</td>
       <td>{{d.category}}</td>
       <td>{{d.amount}}</td>

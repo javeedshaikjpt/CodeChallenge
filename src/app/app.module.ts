@@ -4,11 +4,13 @@ import { DataService } from './data.service';
 import { AppComponent } from './app.component';
 import { DataComponent } from './data/data.component';
 import { HttpModule } from '@angular/http';
+import { SortorderPipe } from './sortorder.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataComponent
+    DataComponent,
+    SortorderPipe
   ],
   imports: [
     BrowserModule,
