@@ -1,0 +1,15 @@
+<div class="container">
+  <table class="table table-bordered">
+    <tr>
+      <th> Name </th>
+      <th> Category </th>
+      <th> Amount </th>
+    </tr>
+    <tr *ngFor="let d of data">
+      <td>{{d.name}}</td>
+      <td>{{d.category}}</td>
+      <td>{{d.amount}}</td>
+    </tr>
+  </table>
+  <button routerLink="/formatData"> Formatted Data </button>
+</div>
