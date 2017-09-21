@@ -1,0 +1,21 @@
+
+<div class="container">
+  <table class="table table-bordered">
+    <thead class="thead-inverse">
+    <tr>
+      <th>name</th>
+      <th>C1</th>
+      <th>C2</th>
+      <th>C3</th>
+    </tr>
+    </thead>
+    <tr *ngFor = "let key of sortedArray">
+      <td> {{key.name}}</td>
+      <td>{{key.C1}}</td>
+      <td>{{key.C2}}</td>
+      <td>{{key.C3}}</td>
+    </tr>
+  </table>
+  <button routerLink="">Back</button>
+</div>
+
